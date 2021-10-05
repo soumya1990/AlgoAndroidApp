@@ -31,7 +31,15 @@ public class BubbleSortTest {
         assertArrayEquals(new int[]{-2,5},a);
     }
 
-    private boolean isSorted(int[] a) {
+    @Test
+    public void testSortIntegersdup() {
+        int[] a = {2,1,1,2,2,1,3};
+        BubbleSort.sort(a);
+        assertTrue(isSorted(a));
+        assertArrayEquals(new int[]{1,1,1,2,2,2,3},a);
+    }
+
+        private boolean isSorted(int[] a) {
         for (int i=0;i<a.length-1;i++) {
             if (a[i] > a[i+1]) {
                 return false;
