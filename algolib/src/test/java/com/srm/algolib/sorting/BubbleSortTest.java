@@ -38,6 +38,13 @@ public class BubbleSortTest {
         assertTrue(isSorted(a));
         assertArrayEquals(new int[]{1,1,1,2,2,2,3},a);
     }
+    @Test
+    public void testSortIntegerNeg() {
+        int[] a = {2,-2,3,-3};
+        BubbleSort.sort(a);
+        assertTrue(isSorted(a));
+        assertArrayEquals(new int[]{3,-2,2,3},a);
+    }
 
         private boolean isSorted(int[] a) {
         for (int i=0;i<a.length-1;i++) {
