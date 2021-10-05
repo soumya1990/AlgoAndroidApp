@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AlgoApp"
 include ':app'
+include ':algolib'
